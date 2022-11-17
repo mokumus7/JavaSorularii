@@ -31,6 +31,7 @@ public class UrunTanimlama {
         this.uretici = uretici;
         this.birim = birim;
         this.id= idIcınRakam;
+        miktar=0;
         idIcınRakam++;
 
     }
@@ -48,7 +49,7 @@ public class UrunTanimlama {
         urunler.put(getId(), urunObje);
 
         do {
-            System.out.println("Urun Eklemeye devam etmek icin 1'e \n Anasayfaya donmek icin 2'ye basin");
+            System.out.println("Urun Eklemeye devam etmek icin 1'e \n Anasayfaya donmek icin 2'ye basiniz");
             int aaa=input.nextInt();
             if(aaa==1){
                 urunBilgileriAl();
@@ -79,11 +80,25 @@ public class UrunTanimlama {
         return id;
     }
 
+    public int getMiktar() {
+        return miktar;
+    }
 
+    public void setMiktar(int miktar) {
+        this.miktar = miktar;
+    }
 
     @Override
     public String toString() {
 
         return  "\t\t"+  adi+"\t\t\t\t"+ uretici+"\t\t\t\t"+ miktar+"\t\t\t"+birim+"\t\t\t"+raf;
+    }
+
+    public String getRaf() {
+        return raf;
+    }
+
+    public void setRaf(String raf) {
+        this.raf = raf;
     }
 }

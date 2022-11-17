@@ -24,18 +24,18 @@ public class DepoKarsilama  {
         switch (secim) {
             case 1:
                UrunTanimlama.urunBilgileriAl();
-               depoKarsilamaSayfasi();
                 break;
             case 2:
-
+                Raf.urunRafaKoy();
                 break;
             case 3:
+                UrunGiris.urunGirisi();
                 break;
             case 4:
+                UrunCikis.urunCikisi();
                 break;
             case 5:
                 UrunListele.urunListe();
-                depoKarsilamaSayfasi();;
                 break;
             default:
                 System.err.println("Gecerli Bir Secim Yapiniz !");
